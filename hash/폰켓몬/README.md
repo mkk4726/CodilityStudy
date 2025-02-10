@@ -1,5 +1,9 @@
 https://school.programmers.co.kr/learn/courses/30/lessons/1845
 
+# 내가 이해한 문제 
+> 배열에서 unique한 아이디 개수 찾기
+
+
 # 문제
 
 문제 설명
