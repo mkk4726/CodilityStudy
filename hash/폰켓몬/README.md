@@ -3,6 +3,8 @@ https://school.programmers.co.kr/learn/courses/30/lessons/1845
 # 내가 이해한 문제 
 > 배열에서 unique한 아이디 개수 찾기
 
+# 오답노트
+> set, dict를 활용해서 시간복잡도 줄이기
 
 # 문제
 
