@@ -11,23 +11,23 @@ X = int(lines[0])
 
 print(X)
 
-count = 0
-while X != 1:
-    if X % 5 == 0:
-        print('split 5')
-        X /= 5
-        count +=1
-    elif X % 3 == 0:
-        print('split 3')
-        X /= 3
-        count +=1
-    elif X % 2 == 0:
-        print('split 2')
-        X /= 2
-        count += 1
-    else:
-        print('minus 5')
-        X -= 1
-        count += 1
+count_list = [0] * (X + 1)
+count_list[1] = 0
+count_list[2] = 0
 
-print(count)
+for N in range(3, X + 1):
+    min_count = X
+    if N % 5 == 0:
+        min_count = min(count_list[N // 5] + 1, min_count)
+    
+    if N % 3 == 0:
+        min_count = min(count_list[N // 3] + 1, min_count)
+    
+    if N % 2 == 0:
+        min_count = min(count_list[N // 2] + 1, min_count)
+    
+    min_count = min(count_list[N - 1] + 1, min_count)
+    
+    count_list[N] = min_count
+    
+print(count_list[X])
