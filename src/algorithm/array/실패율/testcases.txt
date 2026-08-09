@@ -1,0 +1,6 @@
+{"name": "example1", "input": {"n": 5, "stages": [2, 1, 2, 6, 2, 4, 3, 3]}, "expected": [3, 4, 2, 1, 5]}
+{"name": "example2", "input": {"n": 4, "stages": [4, 4, 4, 4, 4]}, "expected": [4, 1, 2, 3]}
+{"name": "single_stage", "input": {"n": 1, "stages": [1, 1, 2]}, "expected": [1]}
+{"name": "everyone_stuck_at_first_stage", "input": {"n": 5, "stages": [1, 1, 1]}, "expected": [1, 2, 3, 4, 5]}
+{"name": "tie_break_ascending_by_stage", "input": {"n": 3, "stages": [3, 3]}, "expected": [3, 1, 2]}
+{"name": "no_one_playing", "input": {"n": 3, "stages": [4, 4, 4]}, "expected": [1, 2, 3]}
