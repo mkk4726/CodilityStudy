@@ -1,0 +1,9 @@
+{"name": "simple_valid", "input": {"s": "()"}, "expected": true}
+{"name": "nested_valid", "input": {"s": "(())"}, "expected": true}
+{"name": "sequential_valid", "input": {"s": "()()"}, "expected": true}
+{"name": "combined_valid", "input": {"s": "(())()"}, "expected": true}
+{"name": "closing_before_opening", "input": {"s": ")("}, "expected": false}
+{"name": "unclosed_open", "input": {"s": "(()"}, "expected": false}
+{"name": "extra_closing", "input": {"s": "())"}, "expected": false}
+{"name": "single_open", "input": {"s": "("}, "expected": false}
+{"name": "single_close", "input": {"s": ")"}, "expected": false}

@@ -1,0 +1,6 @@
+{"name": "example1", "input": {"dirs": "ULURRDLLU"}, "expected": 7}
+{"name": "example2", "input": {"dirs": "LULLLLLLU"}, "expected": 7}
+{"name": "empty_dirs", "input": {"dirs": ""}, "expected": 0}
+{"name": "boundary_ignored", "input": {"dirs": "LLLLLL"}, "expected": 5}
+{"name": "revisit_same_edge_opposite_direction", "input": {"dirs": "RRLL"}, "expected": 2}
+{"name": "full_loop_counts_each_edge_once", "input": {"dirs": "RURDLDLU"}, "expected": 8}

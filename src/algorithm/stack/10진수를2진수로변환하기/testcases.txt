@@ -1,0 +1,7 @@
+{"name": "zero", "input": {"n": 0}, "expected": "0"}
+{"name": "one", "input": {"n": 1}, "expected": "1"}
+{"name": "two", "input": {"n": 2}, "expected": "10"}
+{"name": "ten", "input": {"n": 10}, "expected": "1010"}
+{"name": "all_ones_byte", "input": {"n": 255}, "expected": "11111111"}
+{"name": "power_of_two", "input": {"n": 1024}, "expected": "10000000000"}
+{"name": "upper_bound", "input": {"n": 1000000}, "expected": "11110100001001000000"}
