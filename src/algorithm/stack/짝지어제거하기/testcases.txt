@@ -1,0 +1,11 @@
+{"name": "example_success", "input": {"s": "baabaa"}, "expected": true}
+{"name": "example_fail", "input": {"s": "cdcd"}, "expected": false}
+{"name": "single_char", "input": {"s": "a"}, "expected": false}
+{"name": "double_same", "input": {"s": "aa"}, "expected": true}
+{"name": "double_diff", "input": {"s": "ab"}, "expected": false}
+{"name": "nested_pairs", "input": {"s": "abccba"}, "expected": true}
+{"name": "sequential_pairs", "input": {"s": "aabbcc"}, "expected": true}
+{"name": "odd_length", "input": {"s": "aabbc"}, "expected": false}
+{"name": "no_adjacent_repeat", "input": {"s": "abcabc"}, "expected": false}
+{"name": "large_no_match", "input": {"s": "abababababababababababababababababababababababababababababababababababababababababababababababab"}, "expected": false}
+{"name": "large_all_match", "input": {"s": "aabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabbaabb"}, "expected": true}
