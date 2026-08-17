@@ -1,0 +1,12 @@
+{"name": "example1", "input": {"n": 8, "k": 2, "cmd": ["D 2", "C", "U 3", "C", "D 4", "C", "U 2", "Z", "Z"]}, "expected": "OOOOXOOO"}
+{"name": "example2", "input": {"n": 8, "k": 2, "cmd": ["D 2", "C", "U 3", "C", "D 4", "C", "U 2", "Z", "Z", "U 1", "C"]}, "expected": "OOXOXOOO"}
+{"name": "only_move", "input": {"n": 5, "k": 2, "cmd": ["U 1", "D 2"]}, "expected": "OOOOO"}
+{"name": "delete_last", "input": {"n": 5, "k": 4, "cmd": ["C"]}, "expected": "OOOOX"}
+{"name": "delete_first", "input": {"n": 5, "k": 0, "cmd": ["C"]}, "expected": "XOOOO"}
+{"name": "delete_then_z", "input": {"n": 5, "k": 2, "cmd": ["C", "Z"]}, "expected": "OOOOO"}
+{"name": "delete_last_then_z", "input": {"n": 5, "k": 4, "cmd": ["C", "Z"]}, "expected": "OOOOO"}
+{"name": "consecutive_c", "input": {"n": 5, "k": 0, "cmd": ["C", "C", "C"]}, "expected": "XXXOO"}
+{"name": "c_then_up_c", "input": {"n": 5, "k": 2, "cmd": ["C", "U 1", "C"]}, "expected": "OXXOO"}
+{"name": "restore_does_not_move_cursor", "input": {"n": 5, "k": 0, "cmd": ["D 4", "C", "Z", "C"]}, "expected": "OOOXO"}
+{"name": "z_middle", "input": {"n": 6, "k": 3, "cmd": ["C", "U 2", "Z", "C"]}, "expected": "OXOOOO"}
+{"name": "c_c_then_z_z", "input": {"n": 5, "k": 1, "cmd": ["C", "C", "Z", "Z"]}, "expected": "OOOOO"}
