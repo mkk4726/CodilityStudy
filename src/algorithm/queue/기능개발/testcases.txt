@@ -1,0 +1,7 @@
+{"name": "example1", "input": {"progresses": [93, 30, 55], "speeds": [1, 30, 5]}, "expected": [2, 1]}
+{"name": "example2", "input": {"progresses": [95, 90, 99, 99, 80, 99], "speeds": [1, 1, 1, 1, 1, 1]}, "expected": [1, 3, 2]}
+{"name": "single_task", "input": {"progresses": [1], "speeds": [1]}, "expected": [1]}
+{"name": "same_deploy_day", "input": {"progresses": [99, 99, 99], "speeds": [1, 1, 1]}, "expected": [3]}
+{"name": "one_day_each", "input": {"progresses": [1, 1, 1], "speeds": [100, 100, 100]}, "expected": [3]}
+{"name": "faster_then_slower_grouped", "input": {"progresses": [50, 50, 50, 50], "speeds": [5, 10, 1, 1]}, "expected": [2, 2]}
+{"name": "increasing_days_all_same_batch", "input": {"progresses": [10, 20, 30, 40], "speeds": [10, 10, 10, 10]}, "expected": [4]}

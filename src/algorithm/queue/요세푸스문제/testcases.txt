@@ -1,0 +1,9 @@
+{"name": "example", "input": {"n": 5, "k": 2}, "expected": 3}
+{"name": "single_person", "input": {"n": 1, "k": 1}, "expected": 1}
+{"name": "two_people_k1", "input": {"n": 2, "k": 1}, "expected": 2}
+{"name": "two_people_k2", "input": {"n": 2, "k": 2}, "expected": 1}
+{"name": "seven_three", "input": {"n": 7, "k": 3}, "expected": 4}
+{"name": "k_equals_1", "input": {"n": 5, "k": 1}, "expected": 5}
+{"name": "k_equals_n", "input": {"n": 5, "k": 5}, "expected": 2}
+{"name": "ten_four", "input": {"n": 10, "k": 4}, "expected": 5}
+{"name": "large", "input": {"n": 100, "k": 7}, "expected": 50}
