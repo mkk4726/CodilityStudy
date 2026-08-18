@@ -1,0 +1,9 @@
+{"name": "example1", "input": {"cards1": ["i", "drink", "water"], "cards2": ["want", "to"], "goal": ["i", "want", "to", "drink", "water"]}, "expected": "Yes"}
+{"name": "example2", "input": {"cards1": ["i", "water", "drink"], "cards2": ["want", "to"], "goal": ["i", "want", "to", "drink", "water"]}, "expected": "No"}
+{"name": "use_only_cards1", "input": {"cards1": ["a", "b", "c"], "cards2": ["d"], "goal": ["a", "b"]}, "expected": "Yes"}
+{"name": "use_only_cards2", "input": {"cards1": ["a"], "cards2": ["b", "c"], "goal": ["b", "c"]}, "expected": "Yes"}
+{"name": "cannot_skip_front", "input": {"cards1": ["a", "b"], "cards2": ["c"], "goal": ["b", "c"]}, "expected": "No"}
+{"name": "start_from_cards2", "input": {"cards1": ["a", "c"], "cards2": ["b"], "goal": ["b", "a", "c"]}, "expected": "Yes"}
+{"name": "unused_remain_in_both", "input": {"cards1": ["a", "b"], "cards2": ["c", "d"], "goal": ["a", "c"]}, "expected": "Yes"}
+{"name": "alternating", "input": {"cards1": ["a", "c", "e"], "cards2": ["b", "d"], "goal": ["a", "b", "c", "d", "e"]}, "expected": "Yes"}
+{"name": "wrong_order_same_pile", "input": {"cards1": ["one", "two"], "cards2": ["three"], "goal": ["two", "one", "three"]}, "expected": "No"}
