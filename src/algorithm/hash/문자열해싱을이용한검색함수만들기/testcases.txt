@@ -1,0 +1,10 @@
+{"name": "example1", "input": {"string_list": ["apple", "banna", "cherry"], "query_list": ["banna", "kiwi", "melon", "apple"]}, "expected": [true, false, false, true]}
+{"name": "all_found", "input": {"string_list": ["apple", "banana"], "query_list": ["apple", "banana"]}, "expected": [true, true]}
+{"name": "none_found", "input": {"string_list": ["apple", "banana"], "query_list": ["kiwi", "melon"]}, "expected": [false, false]}
+{"name": "single_found", "input": {"string_list": ["a"], "query_list": ["a"]}, "expected": [true]}
+{"name": "single_not_found", "input": {"string_list": ["a"], "query_list": ["b"]}, "expected": [false]}
+{"name": "prefix_is_not_match", "input": {"string_list": ["apple"], "query_list": ["app", "apple", "apples"]}, "expected": [false, true, false]}
+{"name": "anagram_is_not_match", "input": {"string_list": ["abc"], "query_list": ["cba", "bac", "abc"]}, "expected": [false, false, true]}
+{"name": "duplicate_query", "input": {"string_list": ["cat"], "query_list": ["cat", "cat", "dog"]}, "expected": [true, true, false]}
+{"name": "empty_query_list", "input": {"string_list": ["apple"], "query_list": []}, "expected": []}
+{"name": "empty_string_list", "input": {"string_list": [], "query_list": ["apple", "banana"]}, "expected": [false, false]}
