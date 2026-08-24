@@ -1,0 +1,10 @@
+{"name": "example1", "input": {"want": ["banana", "apple", "rice", "pork", "pot"], "number": [3, 2, 2, 2, 1], "discount": ["chicken", "apple", "apple", "banana", "rice", "apple", "pork", "banana", "pork", "rice", "pot", "banana", "apple", "banana"]}, "expected": 3}
+{"name": "example2", "input": {"want": ["apple"], "number": [10], "discount": ["banana", "banana", "banana", "banana", "banana", "banana", "banana", "banana", "banana", "banana"]}, "expected": 0}
+{"name": "exact_window", "input": {"want": ["apple"], "number": [10], "discount": ["apple", "apple", "apple", "apple", "apple", "apple", "apple", "apple", "apple", "apple"]}, "expected": 1}
+{"name": "exact_window_mismatch", "input": {"want": ["apple"], "number": [10], "discount": ["apple", "apple", "apple", "apple", "apple", "apple", "apple", "apple", "apple", "banana"]}, "expected": 0}
+{"name": "all_same_product", "input": {"want": ["apple"], "number": [10], "discount": ["apple", "apple", "apple", "apple", "apple", "apple", "apple", "apple", "apple", "apple", "apple", "apple"]}, "expected": 3}
+{"name": "match_only_first", "input": {"want": ["banana", "apple"], "number": [6, 4], "discount": ["banana", "banana", "banana", "banana", "banana", "banana", "apple", "apple", "apple", "apple", "chicken"]}, "expected": 1}
+{"name": "match_only_last", "input": {"want": ["banana", "apple"], "number": [6, 4], "discount": ["chicken", "banana", "banana", "banana", "banana", "banana", "banana", "apple", "apple", "apple", "apple"]}, "expected": 1}
+{"name": "consecutive_matches", "input": {"want": ["a", "b"], "number": [5, 5], "discount": ["a", "a", "a", "a", "a", "b", "b", "b", "b", "b", "a", "a", "a", "a", "a"]}, "expected": 6}
+{"name": "unwanted_blocks_until_last", "input": {"want": ["apple"], "number": [10], "discount": ["apple", "apple", "apple", "apple", "apple", "x", "apple", "apple", "apple", "apple", "apple", "apple", "apple", "apple", "apple", "apple"]}, "expected": 1}
+{"name": "quantity_off_by_one", "input": {"want": ["banana", "apple"], "number": [3, 7], "discount": ["banana", "banana", "banana", "banana", "apple", "apple", "apple", "apple", "apple", "apple"]}, "expected": 0}
