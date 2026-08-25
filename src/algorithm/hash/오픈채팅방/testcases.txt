@@ -1,0 +1,9 @@
+{"name": "example1", "input": {"record": ["Enter uid1234 Muzi", "Enter uid4567 Prodo", "Leave uid1234", "Enter uid1234 Prodo", "Change uid4567 Ryan"]}, "expected": ["Prodo님이 들어왔습니다.", "Ryan님이 들어왔습니다.", "Prodo님이 나갔습니다.", "Prodo님이 들어왔습니다."]}
+{"name": "single_enter", "input": {"record": ["Enter uid1 Muzi"]}, "expected": ["Muzi님이 들어왔습니다."]}
+{"name": "enter_leave", "input": {"record": ["Enter uid1 Muzi", "Leave uid1"]}, "expected": ["Muzi님이 들어왔습니다.", "Muzi님이 나갔습니다."]}
+{"name": "change_no_message", "input": {"record": ["Enter uid1 Muzi", "Change uid1 Prodo"]}, "expected": ["Prodo님이 들어왔습니다."]}
+{"name": "leave_reenter_new_nick", "input": {"record": ["Enter uid1 Muzi", "Leave uid1", "Enter uid1 Ryan"]}, "expected": ["Ryan님이 들어왔습니다.", "Ryan님이 나갔습니다.", "Ryan님이 들어왔습니다."]}
+{"name": "two_users_same_nick", "input": {"record": ["Enter uid1 Prodo", "Enter uid2 Prodo"]}, "expected": ["Prodo님이 들어왔습니다.", "Prodo님이 들어왔습니다."]}
+{"name": "change_then_leave", "input": {"record": ["Enter uid1 Muzi", "Change uid1 Ryan", "Leave uid1"]}, "expected": ["Ryan님이 들어왔습니다.", "Ryan님이 나갔습니다."]}
+{"name": "multiple_changes", "input": {"record": ["Enter uid1 A", "Change uid1 B", "Change uid1 C"]}, "expected": ["C님이 들어왔습니다."]}
+{"name": "change_other_user_only", "input": {"record": ["Enter uid1 a", "Enter uid2 b", "Leave uid1", "Change uid2 c"]}, "expected": ["a님이 들어왔습니다.", "c님이 들어왔습니다.", "a님이 나갔습니다."]}

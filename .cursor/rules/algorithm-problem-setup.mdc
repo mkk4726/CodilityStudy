@@ -1,0 +1,31 @@
+---
+description: 알고리즘 문제 폴더 초기 세팅. problem.md만 있으면 정리하고 빈 solution.py, testcases, solution.ipynb를 만든다.
+globs: src/algorithm/**
+alwaysApply: true
+---
+
+# 알고리즘 문제 초기 세팅
+
+사용자가 `problem.md`를 적어 두고 "초기 세팅", "똑같이 세팅", "셋업"을 요청하면 아래만 한다. 알고리즘은 작성하지 않는다.
+
+참고 폴더: `src/algorithm/hash/할인행사/`, `src/algorithm/queue/카드뭉치/`
+
+## 할 일
+
+1. **`problem.md` 정리** — 원문은 유지하되 아래 구조로 다듬는다.
+   - `# 제목` / `## 문제 설명` / `## 제한 조건` / `## 입출력 예` / `## 입출력 예 설명` / `## 풀이` / `## 참고`
+   - 변수명은 백틱. 입출력 예는 마크다운 테이블.
+   - 풀이: `- 테스트 케이스: [\`testcases.txt\`](testcases.txt)`
+   - 프로그래머스 등이면 `## 참고`에 링크.
+2. **`solution.py`** — 시그니처만. 본문은 `pass`. `verify()`와 `assert_testcases` 골격은 기존 문제와 동일.
+3. **`testcases.txt`** — 한 줄에 JSON 하나. `input` 키는 `solution` 파라미터명과 일치. 공식 예시 + 경계/예외 케이스.
+4. **`solution.ipynb`** — 테스트 로드·실행만. 풀이 셀은 넣지 않는다.
+
+```python
+from pathlib import Path
+from src.core.testcase import load_testcases, run_testcases
+from solution import solution
+
+test_cases = load_testcases(Path.cwd() / "testcases.txt")
+results = run_testcases(solution, test_cases)
+```
