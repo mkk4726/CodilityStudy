@@ -1,0 +1,8 @@
+{"name": "example1", "input": {"orders": ["ABCFG", "AC", "CDE", "ACDE", "BCFG", "ACDEH"], "course": [2, 3, 4]}, "expected": ["AC", "ACDE", "BCFG", "CDE"]}
+{"name": "example2", "input": {"orders": ["ABCDE", "AB", "CD", "ADE", "XYZ", "XYZ", "ACD"], "course": [2, 3, 5]}, "expected": ["ACD", "AD", "ADE", "CD", "XYZ"]}
+{"name": "example3", "input": {"orders": ["XYZ", "XWY", "WXA"], "course": [2, 3, 4]}, "expected": ["WX", "XY"]}
+{"name": "unsorted_letters", "input": {"orders": ["BA", "AB"], "course": [2]}, "expected": ["AB"]}
+{"name": "two_identical_orders", "input": {"orders": ["ABC", "ABC"], "course": [2, 3]}, "expected": ["AB", "ABC", "AC", "BC"]}
+{"name": "only_pairs", "input": {"orders": ["ABCFG", "AC", "CDE", "ACDE", "BCFG", "ACDEH"], "course": [2]}, "expected": ["AC"]}
+{"name": "tie_two_pairs", "input": {"orders": ["AB", "AC", "BC", "AB", "AC"], "course": [2]}, "expected": ["AB", "AC"]}
+{"name": "shared_triple", "input": {"orders": ["ABCD", "ABCE"], "course": [3]}, "expected": ["ABC"]}
