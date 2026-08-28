@@ -1,0 +1,9 @@
+{"name": "example1", "input": {"id_list": ["muzi", "frodo", "apeach", "neo"], "report": ["muzi frodo", "apeach frodo", "frodo neo", "muzi neo", "apeach muzi"], "k": 2}, "expected": [2, 1, 1, 0]}
+{"name": "example2", "input": {"id_list": ["con", "ryan"], "report": ["ryan con", "ryan con", "ryan con", "ryan con"], "k": 3}, "expected": [0, 0]}
+{"name": "k_is_one", "input": {"id_list": ["a", "b"], "report": ["a b"], "k": 1}, "expected": [1, 0]}
+{"name": "exactly_k", "input": {"id_list": ["a", "b", "c"], "report": ["a b", "c b"], "k": 2}, "expected": [1, 0, 1]}
+{"name": "no_one_banned", "input": {"id_list": ["a", "b"], "report": ["a b"], "k": 2}, "expected": [0, 0]}
+{"name": "three_reporters_one_target", "input": {"id_list": ["a", "b", "c", "d"], "report": ["a d", "b d", "c d"], "k": 2}, "expected": [1, 1, 1, 0]}
+{"name": "two_banned_one_reporter_sees_both", "input": {"id_list": ["a", "b", "c"], "report": ["a b", "c b", "a c", "b c"], "k": 2}, "expected": [2, 1, 1]}
+{"name": "order_follows_id_list", "input": {"id_list": ["z", "a"], "report": ["a z", "z a"], "k": 1}, "expected": [1, 1]}
+{"name": "unreported_user_gets_zero", "input": {"id_list": ["a", "b", "c"], "report": ["a b"], "k": 1}, "expected": [1, 0, 0]}
