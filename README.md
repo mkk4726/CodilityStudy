@@ -53,10 +53,8 @@
 | [크레인 인형뽑기 게임](src/algorithm/stack/크레인인형뽑기게임) | [프로그래머스](https://school.programmers.co.kr/learn/courses/30/lessons/64061) |
 | [표 편집](src/algorithm/stack/표편집) | [프로그래머스](https://school.programmers.co.kr/learn/courses/30/lessons/81303) |
 | [1475. Final Prices With a Special Discount in a Shop](<src/algorithm/stack/[Leetcode] 1475 - Final Prices With a Special Discount in a Shop>) | [LeetCode](https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/) |
+| [739. Daily Temperatures](<src/algorithm/stack/[Leetcode] 739 - Daily Temperatures>) | [LeetCode](https://leetcode.com/problems/daily-temperatures/) |
 
 ### 다음에 풀어볼 문제
 
-단조 스택(monotonic stack) 패턴 감을 굳히기 위한 다음 후보:
-
-- [ ] [739. Daily Temperatures](https://leetcode.com/problems/daily-temperatures/)
-- [ ] [496. Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/)
+- [ ] (추가 예정)
