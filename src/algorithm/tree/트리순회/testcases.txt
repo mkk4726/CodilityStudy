@@ -1,0 +1,7 @@
+{"name": "example1", "input": {"nodes": [1, 2, 3, 4, 5, 6, 7]}, "expected": ["1245367", "4251637", "4526731"]}
+{"name": "single_node", "input": {"nodes": [1]}, "expected": ["1", "1", "1"]}
+{"name": "left_child_only", "input": {"nodes": [1, 2]}, "expected": ["12", "21", "21"]}
+{"name": "two_levels", "input": {"nodes": [1, 2, 3]}, "expected": ["123", "213", "231"]}
+{"name": "left_leaf_on_third_level", "input": {"nodes": [1, 2, 3, 4]}, "expected": ["1243", "4213", "4231"]}
+{"name": "zero_root", "input": {"nodes": [0, 2, 3]}, "expected": ["023", "203", "230"]}
+{"name": "two_digit_values", "input": {"nodes": [10, 20, 30]}, "expected": ["102030", "201030", "203010"]}
