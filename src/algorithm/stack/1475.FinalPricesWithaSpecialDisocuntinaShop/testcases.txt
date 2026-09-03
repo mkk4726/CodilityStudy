@@ -1,0 +1,12 @@
+{"name": "example1", "input": {"prices": [8, 4, 6, 2, 3]}, "expected": [4, 2, 4, 2, 3]}
+{"name": "example2", "input": {"prices": [1, 2, 3, 4, 5]}, "expected": [1, 2, 3, 4, 5]}
+{"name": "example3", "input": {"prices": [10, 1, 1, 6]}, "expected": [9, 0, 1, 6]}
+{"name": "single_item", "input": {"prices": [5]}, "expected": [5]}
+{"name": "two_next_smaller", "input": {"prices": [5, 3]}, "expected": [2, 3]}
+{"name": "two_next_larger", "input": {"prices": [3, 5]}, "expected": [3, 5]}
+{"name": "equal_qualifies", "input": {"prices": [3, 3]}, "expected": [0, 3]}
+{"name": "all_equal", "input": {"prices": [2, 2, 2]}, "expected": [0, 0, 2]}
+{"name": "strictly_decreasing", "input": {"prices": [5, 4, 3, 2, 1]}, "expected": [1, 1, 1, 1, 1]}
+{"name": "discount_from_far", "input": {"prices": [5, 6, 7, 1]}, "expected": [4, 5, 6, 1]}
+{"name": "skip_larger_then_discount", "input": {"prices": [8, 9, 4]}, "expected": [4, 5, 4]}
+{"name": "min_max_price", "input": {"prices": [1000, 1]}, "expected": [999, 1]}
