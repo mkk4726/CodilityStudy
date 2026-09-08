@@ -1,0 +1,10 @@
+{"name": "example1", "input": {"enroll": ["john", "mary", "edward", "sam", "emily", "jaimie", "tod", "young"], "referral": ["-", "-", "mary", "edward", "mary", "mary", "jaimie", "edward"], "seller": ["young", "john", "tod", "emily", "mary"], "amount": [12, 4, 2, 5, 10]}, "expected": [360, 958, 108, 0, 450, 18, 180, 1080]}
+{"name": "example2", "input": {"enroll": ["john", "mary", "edward", "sam", "emily", "jaimie", "tod", "young"], "referral": ["-", "-", "mary", "edward", "mary", "mary", "jaimie", "edward"], "seller": ["sam", "emily", "jaimie", "edward"], "amount": [2, 3, 5, 4]}, "expected": [0, 110, 378, 180, 270, 450, 0, 0]}
+{"name": "single_seller", "input": {"enroll": ["a"], "referral": ["-"], "seller": ["a"], "amount": [1]}, "expected": [90]}
+{"name": "max_amount", "input": {"enroll": ["a"], "referral": ["-"], "seller": ["a"], "amount": [100]}, "expected": [9000]}
+{"name": "same_seller_twice", "input": {"enroll": ["a"], "referral": ["-"], "seller": ["a", "a"], "amount": [1, 1]}, "expected": [180]}
+{"name": "no_sales", "input": {"enroll": ["a", "b"], "referral": ["-", "a"], "seller": ["a"], "amount": [1]}, "expected": [90, 0]}
+{"name": "chain_truncation", "input": {"enroll": ["a", "b", "c"], "referral": ["-", "a", "b"], "seller": ["c"], "amount": [1]}, "expected": [1, 9, 90]}
+{"name": "deep_chain_stops", "input": {"enroll": ["a", "b", "c", "d"], "referral": ["-", "a", "b", "c"], "seller": ["d"], "amount": [1]}, "expected": [0, 1, 9, 90]}
+{"name": "two_direct_to_center", "input": {"enroll": ["john", "mary"], "referral": ["-", "-"], "seller": ["john", "mary"], "amount": [4, 10]}, "expected": [360, 900]}
+{"name": "middle_sells_and_receives", "input": {"enroll": ["a", "b"], "referral": ["-", "a"], "seller": ["b", "a"], "amount": [1, 1]}, "expected": [99, 90]}
